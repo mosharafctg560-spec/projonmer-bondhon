@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>প্রজন্মের বন্ধন সমবায় সমিতি</title>
+</head>
+
+<body>
+<h2>প্রজন্মের বন্ধন সমবায় সমিতি</h2>
+
+<input id="phone" placeholder="মোবাইল নম্বর"><br><br>
+<button onclick="login()">লগইন</button>
+
+<script>
+function login(){
+ let p=document.getElementById("phone").value;
+ if(p.length<10){alert("সঠিক নম্বর দিন");return;}
+ localStorage.setItem("user",p);
+ alert("লগইন সফল");
+}
+</script>
+
+</body>
+</html>
